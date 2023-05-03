@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App .wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.App .wrapper h1{
+  font-weight: 600;
+  color:black ;
+  font-variant: small-caps;
+}
+.App .wrapper .text{
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+}
+.App .wrapper span{
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.App .card_box{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.App .card_box .card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 1px 2px 5px rgba(146, 146, 146,0.5);
+}
+.App .card_box .card .card_top{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 20rem;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.App .card_box .card .card_top>:nth-child(2){
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+.App .card_box .card .card_top .image{
+  max-width: 105px !important;
+  height: auto !important ;
+  border-radius: 3px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .card_box .card .card_bottom {
+
+  align-items: center;
 }
+.App .card_box .card .card_bottom .progress{
+  background-color: rgb(243 243 243);
+  padding: 18px 14px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.App .card_box .card .card_bottom .progress .progress_left{
+  display: flex;
+  flex-direction: row;
+  gap:7px;
+  align-items: center;
+  align-self: center;
+}
+.App .card_box .card .card_bottom .progress .progress_left>:nth-child(1){
+  color: black;
+  font-size: 16px;
+}
+.App .card_box .card .card_bottom .progress .progress_left>:nth-child(2){
+  color: black;
+  font-size: 16px;
+}
+.App .card_box .card .card_bottom .progress .progress_right{
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media(max-width:1024px){
+  .App .card_box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    justify-content: center;
+}
+}
+
