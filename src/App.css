@@ -65,35 +65,48 @@
   align-items: center;
 }
 .App .card_box .card .card_bottom .progress{
-  background-color: rgb(243 243 243);
-  padding: 18px 14px;
+  background-color:rgb(233 233 233);
+  padding: 2px 4px;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  height: 30px;
   
 }
+.App .card_box .card .card_bottom .progress .progress-done {
+  background: linear-gradient(to left, #006395, #599eff);
+	box-shadow: 0 3px 3px -5px #599eff, 0 2px 5px #599eff;
+	border-radius: 10px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+  padding-right:6px ;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+  font-weight: bold;
+}
 
-.App .card_box .card .card_bottom .progress .progress_left{
-  display: flex;
-  flex-direction: row;
-  gap:7px;
-  align-items: center;
-  align-self: center;
+
+.App .card_box .card .card_bottom .progress  .progress_left{
+ 
+  display: block;
+  position:absolute;
 }
 .App .card_box .card .card_bottom .progress .progress_left>:nth-child(1){
-  color: black;
+  color:#04293b;
   font-size: 16px;
 }
 .App .card_box .card .card_bottom .progress .progress_left>:nth-child(2){
-  color: black;
+  color: #fff;
   font-size: 16px;
-}
-.App .card_box .card .card_bottom .progress .progress_right{
-  color: black;
   font-weight: bold;
-  font-size: 16px;
 }
+
 
 @media(max-width:1024px){
   .App .card_box {
@@ -105,4 +118,77 @@
     justify-content: center;
 }
 }
+
+.App .box {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  width: 25rem;
+  padding: .5rem;
+  margin-top: 1rem;
+  align-items: center;
+  height: auto;
+}
+.App .box h3{
+  margin-bottom: 0 !important;
+  font-weight: bold;
+}
+.App .box .box_div{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  gap: 10px;
+}
+.App .box .box_div .box_counter{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 12px;
+  background-color:#e5e5e5;
+  width: 20rem;
+  justify-content:space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.App .box .box_div .box_counter .box_counter_mid{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.App .box .box_div .box_counter .box_counter_mid>:nth-child(1){
+  font-size: 9px;
+  color: gray;
+  font-weight: 500;
+}
+.App .box .box_div .box_counter .box_counter_mid>:nth-child(2){
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.App .box .box_div .box_counter>:nth-child(1){
+ cursor: pointer;
+}
+.App .box .box_div .box_counter>:nth-child(1):active{
+  transform: scale(0.9);
+}
+.App .box .box_div .box_counter>:nth-child(3):active{
+  transform: scale(0.9);
+}
+.App .box .box_div .box_counter>:nth-child(3){
+  cursor: pointer;
+ }
+ .App .box .box_tips {
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: row;
+  align-self:center;
+  align-items: center;
+  gap: 3px;
+  font-size: 14px;
+}
+.App .box .box_tips>:nth-child(2){
+  color: black;
+}
+
+
 
