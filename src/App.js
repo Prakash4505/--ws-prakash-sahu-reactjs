@@ -128,7 +128,7 @@ function App() {
           </div>
           <div className="card_bottom">
             <div className="progress">
-              <Progress done="60" />
+              <Progress done="38" />
               <div className="progress_left">
                 <span><BoltIcon /></span>
                 <span>181.35</span>
@@ -159,7 +159,7 @@ function App() {
           </div>
           <div className="card_bottom">
             <div className="progress">
-            <Progress done="75" />
+              <Progress done="53" />
               <div className="progress_left">
                 <span><BoltIcon /></span>
                 <span>181.35</span>
@@ -189,7 +189,7 @@ function App() {
           </div>
           <div className="card_bottom">
             <div className="progress">
-            <Progress done="55" />
+              <Progress done="55" />
               <div className="progress_left">
                 <span><BoltIcon /></span>
                 <span>181.35</span>
@@ -221,7 +221,7 @@ function App() {
           </div>
           <div className="card_bottom">
             <div className="progress">
-            <Progress done="88" />
+              <Progress done="88" />
               <div className="progress_left">
                 <span><BoltIcon /></span>
                 <span>181.35</span>
@@ -251,7 +251,7 @@ function App() {
           </div>
           <div className="card_bottom">
             <div className="progress">
-            <Progress done="91" />
+              <Progress done="91" />
               <div className="progress_left">
                 <span><BoltIcon /></span>
                 <span>181.35</span>
@@ -282,8 +282,11 @@ function App() {
       </div>
       {/* Voting pollBox  */}
 
-    <Poll  question="What is your favorite color?"
-  options={["Red", "Blue", "Green"]}/>
+
+      {/* poll voting Demo */}
+      <Poll question="What is your favorite color?"
+        options={["Red", "Blue", "Green"]} />
+      {/* poll voting Demo */}
 
     </div>
   );
